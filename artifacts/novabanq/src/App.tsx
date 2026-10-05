@@ -1,6 +1,7 @@
 import { useRef, useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { motion, useReducedMotion, useScroll, useTransform } from 'framer-motion';
+import { Analytics } from '@vercel/analytics/react';
 
 const imageRoot = `${import.meta.env.BASE_URL}images/`;
 
@@ -161,6 +162,7 @@ function App() {
           </div>
         </div>
       </section>
+      <Analytics />
     </main>
   );
 }
