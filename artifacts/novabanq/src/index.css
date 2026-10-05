@@ -136,10 +136,11 @@ button:focus-visible, a:focus-visible { outline: 3px solid #9be6b7; outline-offs
 .meet-product .section-copy p { font-size: 15px; }
 .meet-phone { display: block; width: min(100%, 440px); height: auto; max-height: 560px; object-fit: contain; align-self: center; margin-top: 22px; }
 
-.tag-section { background: #50c779; color: #102618; min-height: 640px; overflow: hidden; }
+.tag-section { position: relative; background: #50c779; color: #102618; min-height: 730px; overflow: hidden; }
+.tag-section .section-copy { position: relative; z-index: 1; }
 .tag-section .section-copy p { color: rgba(16,38,24,.75); }
-.tag-art { height: 550px; align-self: end; display: flex; justify-content: center; align-items: end; }
-.tag-phone { height: 100%; max-width: 100%; object-fit: contain; object-position: bottom; }
+.tag-art { position: absolute; top: 0; right: clamp(24px,4vw,64px); z-index: 0; width: 50%; height: 550px; display: flex; justify-content: center; align-items: flex-start; }
+.tag-phone { height: 100%; max-width: 100%; object-fit: contain; object-position: top; }
 .tag-section .section-title { max-width: 560px; }
 
 .send-section { min-height: 710px; padding: 100px clamp(24px,4vw,64px) 70px; display: flex; flex-direction: column; align-items: flex-start; text-align: left; background: #fff; }
@@ -195,9 +196,9 @@ button:focus-visible, a:focus-visible { outline: 3px solid #9be6b7; outline-offs
   .meet-photo { height: auto; aspect-ratio: 0.736; width: min(100%,540px); }
   .meet-product { min-height: 620px; padding: 38px 28px 0; }
   .meet-phone { width: min(100%,420px); max-height: 480px; margin-top: 24px; }
-  .tag-section { padding-bottom: 0; }
-  .tag-art { height: 470px; margin-top: 4px; }
-  .tag-phone { max-height: 490px; }
+  .tag-section { min-height: unset; padding-bottom: 0; }
+  .tag-art { position: relative; top: auto; right: auto; width: 100%; height: 470px; margin-top: 4px; align-self: end; align-items: end; }
+  .tag-phone { max-height: 490px; object-position: bottom; }
   .send-section { min-height: unset; padding: 80px 6% 62px; }
   .phone-sequence { gap: 7px; margin-top: 38px; align-items: center; }
   .sequence-phone { width: 31%; max-height: 290px; }
