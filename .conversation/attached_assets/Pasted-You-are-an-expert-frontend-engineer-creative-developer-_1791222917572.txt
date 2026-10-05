@@ -1,0 +1,990 @@
+You are an expert frontend engineer, creative developer, interaction designer, and senior motion designer with 20+ years of experience building premium fintech and editorial websites.
+
+I am providing you with:
+
+A full visual reference of the NovaBanq landing page
+The original hero image
+I will also attach the individual images/assets used throughout the remaining sections.
+
+Your task is to code the website shown in the references as accurately as possible.
+
+This is an implementation task, NOT a redesign task.
+
+Do not reinterpret the design, change the layout, replace images, simplify sections, invent new sections, or introduce your own visual direction.
+
+1. PRIMARY OBJECTIVE
+
+Recreate the supplied NovaBanq landing page as closely as technically possible to the reference design.
+
+The final website should feel like the exact website represented by the design reference when viewed in a browser.
+
+Preserve:
+
+Layout
+Typography
+Text
+Image placement
+Image proportions
+Section ordering
+Colors
+Spacing
+Border radii
+Buttons
+Cards
+Navigation
+Phone mockups
+Decorative elements
+Footer
+Visual hierarchy
+Overall composition
+
+Do not redesign anything.
+
+Do not change the wording unless absolutely necessary for a technical reason.
+
+Do not replace any supplied images with generated images, stock images, placeholders, gradients, or AI-generated alternatives.
+
+2. IMPORTANT — IMAGE FIDELITY
+
+The supplied images are final design assets.
+
+Use the exact images I provide.
+
+Do NOT:
+
+regenerate them
+recreate them with CSS
+replace them with similar images
+crop them unnecessarily
+alter their colors
+apply filters
+change their lighting
+retouch them
+replace the people
+replace the phone UI
+generate alternative versions
+
+If an image is provided separately, use that exact asset.
+
+If the image contains a person, preserve the exact person and composition.
+
+The hero image supplied with this prompt must be used as the actual hero image.
+
+For every additional image I attach, determine where it belongs based on the reference design and use it there.
+
+3. IMAGE FILE STRUCTURE
+
+Create a clean project structure such as:
+
+novabanq/
+├── public/
+│   └── images/
+│       ├── hero.png
+│       ├── ...
+│
+├── src/
+│   ├── components/
+│   ├── sections/
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── styles/
+│
+├── package.json
+└── ...
+
+Use sensible filenames for the supplied assets.
+
+All images should be loaded from local project assets.
+
+Do not use remote image URLs when a supplied local image exists.
+
+4. TECHNOLOGY
+
+Build this as a production-quality website using:
+
+React
+Vite
+CSS
+Framer Motion for animations
+
+Use modern, clean component architecture.
+
+The project must be capable of running with:
+
+npm install
+npm run dev
+
+and building with:
+
+npm run build
+
+Make sure the final project can be deployed directly to Vercel.
+
+Do not create a backend unless absolutely necessary.
+
+This is primarily a frontend landing page.
+
+5. PAGE STRUCTURE
+
+The page should follow the exact order shown in the supplied design.
+
+The major sections are:
+
+SECTION 01
+
+Hero
+
+SECTION 02
+
+“Africa is connected. Its money isn't.”
+
+SECTION 03
+
+“Meet Novabanq”
+
+SECTION 04
+
+“Your identity. Your money. One @tag.”
+
+SECTION 05
+
+“Money should move as easily as you do.”
+
+SECTION 06
+
+“Meet Nova”
+
+SECTION 07
+
+“Let's make Africa pay itself”
+
+SECTION 08
+
+“Africa Moves.”
+
+Footer
+
+Do not add additional sections.
+
+6. HERO SECTION
+
+Reproduce the supplied hero design exactly.
+
+The hero contains:
+
+Navigation
+
+Left:
+
+NovaBanq logo
+
+Navigation:
+
+Product
+How it works
+For businesses
+About
+
+Right:
+
+Get started
+
+The navigation should remain visually minimal.
+
+Hero typography
+
+Main heading:
+
+One account.
+All of Africa.
+
+Supporting copy:
+
+Send, receive and move money across African borders with one simple NovaBanq account.
+
+Buttons:
+
+Get started
+
+See how it works
+
+7. HERO IMAGE
+
+Use the exact supplied hero image.
+
+The image should occupy the same visual position and proportions shown in the reference.
+
+Do not artificially brighten or modify it.
+
+The dark hero background should allow the image and white typography to reproduce the same visual relationship as the reference.
+
+The image should feel integrated into the hero rather than behaving like a separate card.
+
+8. HERO ANIMATION
+
+The hero should not simply appear instantly.
+
+Create a sophisticated entrance sequence.
+
+On initial page load:
+Step 1 — Background
+
+Hero background fades from approximately:
+
+opacity: 0 → 1
+
+over approximately:
+
+800ms
+
+Use an elegant ease-out curve.
+
+Step 2 — Navigation
+
+Navigation elements gently fade and translate upward:
+
+opacity: 0 → 1
+y: 12px → 0
+
+Duration:
+
+600ms
+
+Stagger each navigation item by approximately:
+
+60–80ms
+
+Step 3 — Hero image
+
+The hero image should subtly reveal itself.
+
+Use:
+
+opacity: 0 → 1
+scale: 1.04 → 1
+
+Duration:
+
+1200–1600ms
+
+The movement should be extremely subtle.
+
+It should feel cinematic rather than like a generic website animation.
+
+Step 4 — Heading
+
+Animate the heading line-by-line.
+
+Each line should:
+
+opacity: 0 → 1
+transform: translateY(35px) → translateY(0)
+
+Use a slight stagger.
+
+The text should feel as though it is emerging from behind an invisible mask.
+
+Do NOT use a bouncy animation.
+
+Step 5 — Supporting text
+
+Fade upward:
+
+opacity: 0 → 1
+y: 15px → 0
+
+Duration:
+
+500–700ms
+
+Step 6 — CTA buttons
+
+Buttons should appear after the supporting copy.
+
+Use:
+
+opacity: 0 → 1
+scale: 0.97 → 1
+y: 10px → 0
+
+Keep the animation subtle.
+
+9. HERO MICRO-INTERACTIONS
+
+The buttons should have premium micro-interactions.
+
+Get started
+
+On hover:
+
+slight upward movement
+subtle scale
+smooth background transition
+
+Do NOT make it bounce.
+
+See how it works
+
+On hover:
+
+subtle border/background transition
+slight movement
+
+Keep the interaction within approximately:
+
+150–250ms
+
+10. SCROLLING EXPERIENCE
+
+This is extremely important.
+
+I do not want the website to feel like a collection of unrelated sections stacked vertically.
+
+The sections should feel like individual visual frames that close over one another as the user scrolls.
+
+Think:
+
+cinematic editorial website
+
+premium fintech
+sophisticated motion design
+
+As the user scrolls, each new section should feel as though it is taking over the previous frame.
+
+11. SECTION TRANSITION SYSTEM
+
+Use a combination of:
+
+sticky sections
+controlled z-index layering
+position: sticky
+transform animations
+opacity
+scale
+clip-path where appropriate
+subtle parallax
+Framer Motion scroll progress
+
+The transition should feel like:
+
+Frame 01
+
+Hero
+
+↓
+
+User scrolls
+
+Frame 02
+
+The next section gradually covers/replaces the hero
+
+↓
+
+User continues scrolling
+
+Frame 03
+
+Another section visually closes over the previous one
+
+↓
+
+Continue throughout the page.
+
+The effect should feel intentional and cinematic.
+
+12. IMPORTANT — DO NOT OVERANIMATE
+
+The animation quality should resemble a senior motion designer's work, not a collection of web animation effects.
+
+Avoid:
+
+excessive bouncing
+spinning
+unnecessary rotations
+huge scaling
+flashy transitions
+random parallax
+excessive blur
+gimmicky 3D
+exaggerated easing
+
+Every movement should communicate hierarchy or continuity.
+
+13. SECTION 02
+
+Title:
+
+Africa is connected.
+Its money isn't.
+
+Supporting text:
+
+Different currencies, different payment rails, different apps. More friction.
+
+Use the exact phone/interface visual shown in the supplied reference.
+
+Entrance animation
+
+As the section enters:
+
+The heading should fade upward.
+
+The phone should enter slightly from the right:
+
+x: 60px → 0
+opacity: 0 → 1
+
+The floating country/payment labels should appear sequentially.
+
+Use subtle staggered timing.
+
+14. SECTION 02 PHONE MOTION
+
+As the user scrolls through this section:
+
+The phone should have a very subtle parallax movement.
+
+The UI itself can have a tiny vertical movement to create depth.
+
+Do not make the phone spin.
+
+Do not excessively rotate it.
+
+The feeling should be:
+
+“The product is being revealed.”
+
+15. SECTION 03 — MEET NOVABANQ
+
+Use the exact supplied image and phone interface.
+
+Heading:
+
+Meet Novabanq
+
+Supporting copy:
+
+One account, one @tag. Multiple African currencies.
+
+The section should feel like a product introduction moment.
+
+Animation
+
+Image:
+
+opacity: 0 → 1
+scale: 0.96 → 1
+
+Phone:
+
+y: 50px → 0
+opacity: 0 → 1
+
+Text:
+
+clip/mask reveal
+y: 25px → 0
+opacity: 0 → 1
+
+The elements should not all appear simultaneously.
+
+16. SECTION 04 — @TAG
+
+Green section.
+
+Heading:
+
+Your identity.
+Your money.
+One @tag.
+
+Supporting text:
+
+Share your Novabanq @tag and get paid without asking people to navigate complicated account numbers.
+
+Use the exact phone visual.
+
+Animation
+
+This section should feel more energetic because the background changes strongly.
+
+As it enters:
+
+Green background expands/settles into position.
+Heading reveals line-by-line.
+Supporting text fades upward.
+Phone rises gently from the bottom.
+Phone UI becomes fully visible.
+
+The phone can have a subtle floating movement while the section is active.
+
+Very small:
+
+y: 0 → -8px → 0
+
+over several seconds.
+
+17. SECTION 05 — SEND MONEY
+
+Heading:
+
+Money should move
+as easily as you do.
+
+Supporting text:
+
+Select recipient, choose corridor, enter amount, see the rate, review and confirm.
+
+Use the exact three phone screens from the reference.
+
+18. SEND MONEY ANIMATION
+
+This section should be one of the strongest motion moments on the website.
+
+As the section enters:
+
+Phone 1
+
+Slides upward.
+
+Phone 2
+
+Appears slightly later.
+
+Phone 3
+
+Appears last.
+
+Create a subtle sequential storytelling effect.
+
+For example:
+
+Phone 1
+↓
+Phone 2
+↓
+Phone 3
+
+The sequence should visually communicate:
+
+Select → Enter → Confirm
+
+Do not make the phones fly around the screen.
+
+They should settle into their final positions with precision.
+
+19. SECTION 06 — MEET NOVA
+
+Heading:
+
+Meet Nova
+
+Supporting text:
+
+Nova is a cool companion inside the app, Nova helps you send and schedule payments easily.
+
+Use the exact Nova mascot asset provided.
+
+Nova should feel like a character, not an advertisement.
+
+Animation
+
+When the section enters:
+
+Nova should gently rise into view:
+
+opacity: 0 → 1
+y: 50px → 0
+
+Then introduce an extremely subtle idle animation:
+
+slight floating
+tiny breathing movement
+subtle phone movement
+
+Do not continuously bounce the character.
+
+20. FINAL CTA
+
+Green section.
+
+Heading:
+
+Let's make
+Africa pay itself
+
+Supporting text:
+
+One account, one @tag. A simpler way to move money across Africa.
+
+Buttons:
+
+Get started
+
+See how it works
+
+This section should feel like the emotional conclusion of the story.
+
+21. FINAL CTA ANIMATION
+
+As the section closes over the previous section:
+
+The background should settle into the NovaBanq green.
+
+The heading should reveal line-by-line.
+
+Use a large typography reveal:
+
+clip-path / mask
+
+with:
+
+translateY(40px) → 0
+opacity: 0 → 1
+
+The buttons follow afterward.
+
+This should feel confident and deliberate.
+
+22. FOOTER
+
+The footer should reproduce the supplied design.
+
+Large text:
+
+AFRICA
+MOVES.
+
+Use the dark green footer background from the reference.
+
+Include:
+
+NovaBanq logo
+
+Product
+Send money
+Receive money
+Convert
+Changelog
+Multi-currency
+Company
+About us
+Careers
+Contact
+Resources
+Help center
+Security
+Privacy
+Terms
+Socials
+Twitter
+Instagram
+LinkedIn
+
+Do not invent additional footer content.
+
+23. FOOTER ANIMATION
+
+The footer typography should have a subtle reveal.
+
+When entering the viewport:
+
+AFRICA
+MOVES.
+
+should reveal from below using a large masked text animation.
+
+Do not animate each letter excessively.
+
+The footer should feel like a quiet cinematic ending.
+
+24. SCROLL CHOREOGRAPHY
+
+The entire website should feel like one continuous motion sequence.
+
+Think of the page as:
+
+HERO
+   ↓
+FRAME CLOSES
+   ↓
+PROBLEM
+   ↓
+FRAME CLOSES
+   ↓
+PRODUCT
+   ↓
+FRAME CLOSES
+   ↓
+@TAG
+   ↓
+FRAME CLOSES
+   ↓
+SEND
+   ↓
+FRAME CLOSES
+   ↓
+NOVA
+   ↓
+FRAME CLOSES
+   ↓
+CTA
+   ↓
+FOOTER
+
+Each section should have its own animation language while maintaining a consistent motion system.
+
+25. MOTION SYSTEM
+
+Use sophisticated easing.
+
+Prefer:
+
+cubic-bezier(0.22, 1, 0.36, 1)
+
+for major entrances.
+
+For subtle UI movement use gentle ease-out curves.
+
+Animation durations should generally fall around:
+
+Micro interaction
+
+150–250ms
+
+UI entrance
+
+400–700ms
+
+Major section entrance
+
+700–1200ms
+
+Cinematic transition
+
+1000–1600ms
+
+Do not make every animation the same duration.
+
+26. SCROLL PROGRESS
+
+Use Framer Motion's scroll progress functionality where appropriate.
+
+For example:
+
+scrollYProgress
+
+can control:
+
+image parallax
+phone movement
+section opacity
+subtle scaling
+text reveal
+frame transitions
+
+But keep the movement restrained.
+
+The page must still feel fast and responsive.
+
+27. RESPONSIVE DESIGN
+
+The supplied reference is the primary visual authority.
+
+Reproduce the design at desktop dimensions first.
+
+Then intelligently adapt it for:
+
+Desktop
+
+1440px+
+
+Laptop
+
+1024–1439px
+
+Tablet
+
+768–1023px
+
+Mobile
+
+390px
+
+Small mobile
+
+360px
+
+Do not simply shrink the desktop design.
+
+Preserve the visual hierarchy.
+
+On mobile:
+
+typography scales appropriately
+images remain prominent
+phones can stack
+navigation becomes a compact mobile navigation
+animations become lighter
+horizontal overflow must never occur
+sections remain visually immersive
+28. ACCESSIBILITY
+
+Maintain:
+
+semantic HTML
+keyboard navigation
+accessible buttons
+meaningful alt text
+sufficient contrast
+reduced-motion support
+
+If the user has:
+
+prefers-reduced-motion: reduce
+
+dramatically reduce the motion while preserving the layout.
+
+29. PERFORMANCE
+
+The website should feel extremely smooth.
+
+Optimize:
+
+image loading
+animation performance
+layout shifts
+unnecessary re-renders
+
+Prefer transforms and opacity for animation.
+
+Avoid animating expensive layout properties unnecessarily.
+
+Use lazy loading for images that are below the fold.
+
+The first hero image should load with priority.
+
+30. DO NOT CHANGE THESE THINGS
+
+This is extremely important.
+
+Do NOT:
+
+redesign the website
+change the visual style
+change the copy
+change the image selection
+replace images
+add random gradients
+add glassmorphism
+add excessive shadows
+add 3D effects that aren't present
+add unnecessary sections
+change the green palette
+turn it into a generic SaaS website
+use generic stock photography
+change the Nova mascot
+change the phone UI
+replace the typography with a different style
+simplify the page because of implementation difficulty
+
+If something is difficult to reproduce, find a technical solution rather than changing the design.
+
+31. VISUAL PRIORITY
+
+When there is a conflict between your implementation preferences and the supplied design, follow this hierarchy:
+
+1. Supplied visual reference
+
+↓
+
+2. Supplied images/assets
+
+↓
+
+3. Typography and spacing
+
+↓
+
+4. Animation/motion direction
+
+↓
+
+5. Responsive adaptation
+
+↓
+
+6. Your implementation preferences
+
+The reference design always wins.
+
+32. FINAL QUALITY CHECK
+
+Before considering the project complete, compare the implementation against the supplied design and check:
+
+Hero composition
+Navigation positioning
+Heading size
+Heading line breaks
+Image positioning
+Section heights
+Section spacing
+Phone positioning
+Button dimensions
+Colors
+Footer
+Typography
+Mobile layout
+Scroll transitions
+Animation timing
+Image fidelity
+
+Fix visual discrepancies.
+
+Do not stop after producing a basic approximation.
+
+33. IMPORTANT — CREATE THE COMPLETE PROJECT
+
+At the end, I need the complete working project files, not just snippets.
+
+Make sure the project contains:
+
+package.json
+src/
+public/
+index.html
+vite.config.js
+
+and all required files.
+
+Make sure:
+
+npm install
+npm run build
+
+works successfully.
+
+The final project must be structured so that I can deploy it directly to Vercel.
+
+Do not require me to manually reconstruct missing files.
+
+FINAL INSTRUCTION
+
+Treat the attached design as the source of truth.
+
+I am not asking you to design a NovaBanq website.
+
+I am asking you to code this NovaBanq website.
+
+Preserve the supplied assets exactly.
+
+Reproduce the layout exactly.
+
+Implement the typography and spacing carefully.
+
+Make the scrolling experience feel like a premium cinematic product story where each visual frame gradually closes over the previous frame.
+
+The motion should feel like the work of an experienced motion designer — intentional, restrained, smooth, expressive and never gimmicky.
+
+Build the complete Vite/React project and ensure it is ready for deployment to Vercel.

@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "NovaBanq"
+description = "A cinematic, responsive NovaBanq landing page introducing a multi-currency African payments account, built with the supplied photography and interface assets."
+version = "1.0.0"
+id = "artifacts/novabanq"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 24881
+
+[services.development]
+run = "pnpm --filter @workspace/novabanq run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/novabanq", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/novabanq/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "24881"
+BASE_PATH = "/"
